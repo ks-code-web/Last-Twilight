@@ -27,7 +27,42 @@
 
     </div>
 <body>
-
+<!--descuento-->
+<div class="contenedor2">
+  <div class="image-contenedor2">
+    <img src="83.png" alt="Imagen del producto" style="width:250px">  
+  </div>
+  <div class="text-contenedor2">
+    <h1 style="text-align:center;">¡No te lo pierdas!</h1>
+    <p>¡Aprovecha! 50% de descuento por tiempo limitado.</p>
+    <p>¡Pídelo ahora mismo con solo un par de clics!</p>
+  </div>
+</div>
+<br><br><br><br><br>
+<br><br><br>
+<!--secciones-->
+<div class="galeria">
+              <div class="producto">
+        <img src="80.png" ><br>
+          <a href="envios.html">Envió Gratuito</a>
+       </div>
+        <div class="producto">
+        <img src="81.png" ><br>
+          <a id="devolucionButton" href="#">Devolución</a>
+          <div id="overlay"></div>
+       </div>
+        <div class="producto">
+        <img src="82.png" ><br>
+          <a href="envoltorio.html">Envoltorio Para Regalo</a>
+       </div>
+       </div>
+       <br><br><br><br>
+<div id="devolucionContainer">
+    <h3 style="text-align: center;">Devolución</h3>
+    <p>Si deseas devolver o cambiar un artículo:<br><br>Ponte en contacto con el departamento de Atención al cliente en un plazo de 30 días a partir de la entrega llamando al 525 857 7515<br><br>Solicita un número de autorización de devolución y te lo enviaremos por correo electrónico.<br><br>Para obtener más información sobre los términos, condiciones y métodos de devolución y sustitución, ponte en contacto con el departamento de Atención al cliente llamando al 525 857 7515.</p>
+    <button id="closeButton">Cerrar</button>
+</div>
+<br>
    <!--Destacados -->
 <header>
         <h1>Productos Destacados</h1>
@@ -108,6 +143,28 @@
         const walk = (x - startX); // Cambia la velocidad del desplazamiento aquí
         gallery.scrollLeft = scrollLeft - walk; // Permite desplazar a ambos lados
     });
+    /*decolucion*/
+    const devolucionButton = document.getElementById("devolucionButton");
+const devolucionContainer = document.getElementById("devolucionContainer");
+const closeButton = document.getElementById("closeButton");
+const overlay = document.getElementById("overlay");
+
+devolucionButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Evitar que la página se desplace
+    devolucionContainer.style.display = "block";
+    overlay.style.display = "block"; // Mostrar el fondo oscuro
+});
+
+closeButton.addEventListener("click", () => {
+    devolucionContainer.style.display = "none";
+    overlay.style.display = "none"; // Ocultar el fondo oscuro
+});
+
+// Cerrar al hacer clic en el overlay también
+overlay.addEventListener("click", () => {
+    devolucionContainer.style.display = "none";
+    overlay.style.display = "none"; // Ocultar el fondo oscuro
+});
     </script>
     <!-- Informacion-->
    <br>
@@ -116,7 +173,6 @@
     <h3>Categorías</h3>
     <a href="perfumesdemujer.html">Dama</a><br>
     <a href="perfumesdehombres.html">Caballero</a><br>
-    <a href="LociónCorporal.html">Reagalos</a>
     </div>
 
     <div>
@@ -128,7 +184,7 @@
 
     <div>
     <h3>Síguenos en Redes Sociales</h3>
-   <a target="_blank" href="https://www.instagram.com/mll.jmz_/"><img src="insta.jpg"></a>
+   <a target="_blank" href="https://www.instagram.com/last_twilight._?igsh=M2VwajFjcXA1MGg5"><img src="insta.jpg"></a>
    <a target="_blank" href="https://www.facebook.com/profile.php?id=61554947274942"><img src="fa.jpg"></a>
    <a target="_blank" href="https://www.youtube.com/@MARTELLJIMENEZKARLAYANETH"><img src="you.jpg"  style=" border-radius: 50px;"></a>
    <a target="_blank" href="https://mx.pinterest.com/karlayanethmartelljimenez/"><img src="pi.jpg"  style=" border-radius: 50px;"></a>

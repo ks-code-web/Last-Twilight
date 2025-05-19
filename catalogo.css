@@ -1,4 +1,3 @@
-/*<h1>Descubre tu esencia única</h1>*/
 /*Anuncio descuento*/
 .todo{
      display: flex;
@@ -18,12 +17,12 @@
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,58, 171, 204 );
+    box-shadow: 0 0 20px black;
     transition: box-shadow 0.3s ease;
 }
 
 .contenedor2:hover {
-    box-shadow: 0 0 30px rgba(0, 136, 228, 255 );
+    box-shadow: 0 0 30px #6d0510;
 }
 
 h1 {
@@ -45,7 +44,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4b98a0; /*color del menu*/
+  background-color: #6d0510; /*color del menu*/
   padding: 13px 30px;
   font-family: Corsiva;
   margin: 0px;
@@ -64,7 +63,7 @@ nav {
 }
 
 .nav-item {
-  color:#000000;
+  color:white;
   text-decoration: none;
   margin: 0 9px;
   font-size: 1.4em;
@@ -72,7 +71,7 @@ nav {
 }
 
 .nav-item:hover {
-  color: #f9f8f3;  
+  color: black;  
 }
 
 /*Buscador*/
@@ -127,10 +126,10 @@ a {
   border-color: black; 
   border-radius: 10px;
   font-family: cursive; 
- background-color: #134d52;
+ background-color: white;
 }
 .item a:hover {
-  background-color: #4b98a0;
+  background-color: #6d0510;
 }
 
 .per{
@@ -160,24 +159,27 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4b98a0; /*color del menu*/
+  background-color: #6d0510; /*color del menu*/
   padding: 13px 30px;
   font-family: Corsiva;
   margin: 0px;
+  color: white;
 }
 .texto img{
   max-height: 35px ;
    padding: 10px;
    border-radius: 22px;
 }
-
+.texto a{
+    color: white;
+}
 /*Derechos reservados*/
 .DR{
   text-align: center;
    padding: 1px 0px;
   margin: 0px;
   color: white;
-  background-color: #4b98a0; /*color del menu*/
+  background-color: #6d0510; /*color del menu*/
   font-size: 17px;
   font-family: Corsiva;
 }

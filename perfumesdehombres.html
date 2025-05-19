@@ -35,7 +35,7 @@
 <body>
   <div class="galeria">
       <div class="producto">
-        <img src="25.jpg">
+        <img src="25.jpg" id="miImagen1"  onmouseover="cambiar1()" onmouseout="volver1()">
         <br>
         <a href="p1h.html">Perfume Cosmos Musk De Fuller</a>
         <h3>$346.00</h3>
@@ -43,49 +43,49 @@
       </div>
 
       <div class="producto">
-        <img src="26.jpg">
+        <img src="26.jpg" id="miImagen2"  onmouseover="cambiar2()" onmouseout="volver2()">
         <a href="p2h.html">Perfume Marca Ebc Para Hombre 365 Day Red</a>
         <h3>$1,034.49</h3>
         <button onclick="addToCart('Perfume Marca Ebc Para Hombre 365 Day Red', 1034.49)">Añadir al carrito</button>
       </div>
 
        <div class="producto">
-        <img src="27.jpg">
+        <img src="27.jpg" id="miImagen3"  onmouseover="cambiar3()" onmouseout="volver3()">
         <a href="p3h.html">Perfume Armand Dupree Ice Fuller</a>
         <h3>$490.00</h3>
         <button onclick="addToCart('Perfume Armand Dupree Ice Fuller', 490.00)">Añadir al carrito</button>
        </div>
 
       <div class="producto">
-        <img src="28.jpg">
+        <img src="28.jpg" id="miImagen4"  onmouseover="cambiar4()" onmouseout="volver4()">
         <a href="p4h.html">Perfume Hombre Hero For Men Red Eau De Toilette</a>
         <h3>$250.00</h3>
         <button onclick="addToCart('Perfume Hombre Hero For Men Red Eau De Toilette',250.00)">Añadir al carrito</button>
       </div>
 
       <div class="producto">
-        <img src="29.jpg">
+        <img src="29.jpg" id="miImagen5"  onmouseover="cambiar5()" onmouseout="volver5()">
         <a href="p5h.html">Perfume 365 Blue EBC Collection</a>
         <h3>$999.00</h3>
         <button onclick="addToCart('Perfume 365 Blue EBC Collection', 999.00)">Añadir al carrito</button>
       </div>
 
        <div class="producto">
-        <img src="30.jpg">
+        <img src="30.jpg" id="miImagen6"  onmouseover="cambiar6()" onmouseout="volver6()">
         <a href="p6h.html">Espinoza Paz Perfume Para Hombre</a>
         <h3>$560.00</h3>
         <button onclick="addToCart('Espinoza Paz Perfume Para Hombre',560.00)">Añadir al carrito</button>
        </div>
 
        <div class="producto">
-        <img src="31.jpg">
+        <img src="31.jpg" id="miImagen7"  onmouseover="cambiar7()" onmouseout="volver7()">
         <a href="p7h.html">JF9 BLACK PERFUME PARA HOMBRE</a>
         <h3>$300.00</h3>
         <button onclick="addToCart('JF9 BLACK PERFUME PARA HOMBRE',300.00)">Añadir al carrito</button>
       </div>
 
         <div class="producto">
-        <img src="36.jpg">
+        <img src="36.jpg" id="miImagen8"  onmouseover="cambiar8()" onmouseout="volver8()">
         <a href="p8h.html">Perry Ellis 360</a>
         <h3>$669.00</h3>
         <button onclick="addToCart('Perry Ellis 360',669.00)">Añadir al carrito</button>
@@ -137,6 +137,65 @@
     updateCart();
     closeModal();
     }
+    /*transicion*/
+      function cambiar1() {
+        document.getElementById('miImagen1').src = '72.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver1() {
+        document.getElementById('miImagen1').src = '25.jpg'; // Vuelve a la imagen original
+    }
+
+      function cambiar2() {
+        document.getElementById('miImagen2').src = '73.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver2() {
+        document.getElementById('miImagen2').src = '26.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar3() {
+        document.getElementById('miImagen3').src = '74.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver3() {
+        document.getElementById('miImagen3').src = '27.jpg'; // Vuelve a la imagen original
+    }
+
+      function cambiar4() {
+        document.getElementById('miImagen4').src = '75.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver4() {
+        document.getElementById('miImagen4').src = '28.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar5() {
+        document.getElementById('miImagen5').src = '76.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver5() {
+        document.getElementById('miImagen5').src = '29.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar6() {
+        document.getElementById('miImagen6').src = '77.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver6() {
+        document.getElementById('miImagen6').src = '30.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar7() {
+        document.getElementById('miImagen7').src = '78.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver7() {
+        document.getElementById('miImagen7').src = '31.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar8() {
+        document.getElementById('miImagen8').src = '79.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver8() {
+        document.getElementById('miImagen8').src = '36.jpg'; // Vuelve a la imagen original
+    }
 </script>
    <br>
   <!-- Informacion-->
@@ -146,7 +205,6 @@
     <h3>Categorías</h3>
     <a href="perfumesdemujer.html">Dama</a><br>
     <a href="perfumesdehombres.html">Caballero</a><br>
-    <a href="LociónCorporal.html">Reagalos</a>
     </div>
 
     <div>
@@ -158,7 +216,7 @@
 
     <div>
     <h3>Síguenos en Redes Sociales</h3>
-   <a target="_blank" href="https://www.instagram.com/mll.jmz_/"><img src="insta.jpg"></a>
+   <a target="_blank" href="https://www.instagram.com/last_twilight._?igsh=M2VwajFjcXA1MGg5"><img src="insta.jpg"></a>
    <a target="_blank" href="https://www.facebook.com/profile.php?id=61554947274942"><img src="fa.jpg"></a>
    <a target="_blank" href="https://www.youtube.com/@MARTELLJIMENEZKARLAYANETH"><img src="you.jpg"  style=" border-radius: 50px;"></a>
    <a target="_blank" href="https://mx.pinterest.com/karlayanethmartelljimenez/"><img src="pi.jpg"  style=" border-radius: 50px;"></a>
